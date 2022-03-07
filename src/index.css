@@ -63,6 +63,7 @@ main {
   border-radius: 5px;
   color: white;
   background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  cursor: pointer;
 }
 
 .meme {
