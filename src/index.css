@@ -90,6 +90,13 @@ main {
   transform: translateX(-50%);
   width: 80%;
   margin: 15px 0;
+
+  /* fix overflowing text*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .top {
