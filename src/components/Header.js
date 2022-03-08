@@ -10,7 +10,12 @@ const Header = () => {
         alt="Meme Generator Logo"
       ></img>
       <h3 className="header--title">Meme Generator</h3>
-      <p className="header--text">By Tobi Adeleye</p>
+      <a
+        href="https://github.com/adelleye/meme-generator"
+        className="header--text"
+      >
+        By Tobi
+      </a>
     </nav>
   );
 };

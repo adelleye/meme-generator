@@ -76,7 +76,7 @@ const Meme = () => {
         className="download"
         onClick={() => exportAsImage(exportRef.current, "Your Amazing Meme")}
       >
-        Download Meme
+        😊 Download Your Amazing Meme
       </button>
     </main>
   );

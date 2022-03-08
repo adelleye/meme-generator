@@ -35,6 +35,8 @@ h3 {
   margin-left: auto;
   font-weight: 400;
   font-size: 0.75rem;
+  color: white;
+  text-decoration: none;
 }
 
 /* MEME STYLES*/
@@ -109,12 +111,13 @@ main {
 }
 
 .download {
-  margin-top: 16px;
+  margin-top: 40px;
   border: none;
   border-radius: 5px;
-  padding: 8px 12px;
-  color: white;
-  background: linear-gradient(90.41deg, #cfcc0d 1.14%, #186cda 100%);
+  padding: 12px 32px;
+  color: #22223b;
+  background: #ffe863;
+  font-weight: 600;
   cursor: pointer;
 }
 
