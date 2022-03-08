@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import placeHolderImage from "../images/ned-stark.jpg";
+import exportAsImage from "../utils/exportAsImage";
 
 const Meme = () => {
+  const exportRef = useRef();
+
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
@@ -63,11 +66,15 @@ const Meme = () => {
         </button>
       </div>
 
-      <div className="meme">
+      <div className="meme" ref={exportRef}>
         <img src={meme.randomImage} className="meme--image"></img>
         <h3 className="meme--text top">{meme.topText}</h3>
         <h3 className="meme--text bottom">{meme.bottomText}</h3>
       </div>
+
+      <button onClick={() => exportAsImage(exportRef.current, "test")}>
+        Download Meme
+      </button>
     </main>
   );
 };
