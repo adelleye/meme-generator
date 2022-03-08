@@ -72,7 +72,10 @@ const Meme = () => {
         <h3 className="meme--text bottom">{meme.bottomText}</h3>
       </div>
 
-      <button onClick={() => exportAsImage(exportRef.current, "test")}>
+      <button
+        className="download"
+        onClick={() => exportAsImage(exportRef.current, "Your Amazing Meme")}
+      >
         Download Meme
       </button>
     </main>

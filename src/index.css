@@ -71,7 +71,8 @@ main {
 }
 
 .meme--image {
-  max-width: 100%;
+  max-width: calc(100vw - 8rem);
+  height: 100%;
 }
 
 .meme--text {
@@ -105,6 +106,16 @@ main {
 }
 .bottom {
   bottom: 0;
+}
+
+.download {
+  margin-top: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+  background: linear-gradient(90.41deg, #cfcc0d 1.14%, #186cda 100%);
+  cursor: pointer;
 }
 
 /* IPAD STYLES*/
